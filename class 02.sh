@@ -9,7 +9,7 @@
 
 day=$(date +%D%T)
 
-cp /var/log/syslog .
+cp /var/log/syslog 
 
 mv syslog syslog_$day
 
