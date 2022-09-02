@@ -20,7 +20,7 @@ do
         Ping_Loopback)
         echo "----------------------------"
         echo "loopback ping: "
-        ping -c 5 127.0.0.1
+        ping -c 5 192.168.0.4
         echo "----------------------------"
         ;;
         Print_IP_Information)
