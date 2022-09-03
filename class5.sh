@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script: Ops 301 Class 05 Ops Challenge Solution
-# Author: sujan thapam gar           
+# Author: sujan thapa magar           
 # Date of latest revision: 02SEP2022      
 # Purpose: Writes a script that clears the contents of logs and prints to the screen the before and after of the contents
 
