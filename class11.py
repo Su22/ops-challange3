@@ -20,7 +20,7 @@ print("newtextfile.txt has been created.\n")
 file_object = open("newtextfile.txt", "a")
 
 # Adds 3 new lines to the text file
-file_object.write('Hello\nI am happy to see you\nGood-bye\n')
+file_object.write('Hello\nhow are you\nsee-you\n')
 file_object.close()
 
 # Opens the text file
